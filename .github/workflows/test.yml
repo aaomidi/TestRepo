@@ -10,7 +10,7 @@ jobs:
     name: Release labeler
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v2
+      - uses: aaomidi/AutoLabel@master
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN}}"
-          configuration-path: ".github/release-labeler.yml"
+          label: "Port Request"
