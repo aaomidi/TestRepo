@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: aaomidi/AutoMerge@master
-        with:
+        env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
